@@ -198,7 +198,21 @@ checkSpecial($password);
 
 
 
+function globale($pwd){
 
+
+    if(checkLenght($pwd)==true && checkUppercase ($pwd)==true && checkNumber($pwd)==true && checkSpecial($pwd)==true ){
+        echo "password corretta";
+        return true;
+    }else{
+        echo"passord non corretta";
+        return false;
+    }
+
+}
+
+
+globale($password);
 
 
 
